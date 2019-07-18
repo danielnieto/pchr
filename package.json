@@ -41,7 +41,7 @@
   "repository": "danielnieto/pchr",
   "scripts": {
     "posttest": "tslint -p . -t stylish",
-    "prepack": "rm -rf lib && tsc -b",
+    "prepack": "rm -rf lib && tsc -b && cp src/chrome-refresh.scpt lib/chrome-refresh.scpt",
     "test": "echo NO TESTS"
   },
   "types": "lib/index.d.ts"

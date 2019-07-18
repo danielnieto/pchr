@@ -10,6 +10,24 @@ Placeit Css Hot Reload
 
 <!-- toc -->
 # Usage
-<!-- usage -->
-# Commands
-<!-- commands -->
+
+1. Install PCHR globally through NPM (or yarn)
+
+`sudo npm install -g pchr`
+
+2. Activate Chrome's Javascript execution from Apple Events
+
+Turn on `View > Developer > Allow JavaScript from Apple Events`
+
+3. Run PCHR
+
+ `pchr <PLACEIT_FOLDER_LOCATION>`
+
+
+If folder is **not** provided `PCHR` will start to watch watches from the current location, so, if you're already on Placeit's repo folder, then you can just execute `pchr`
+
+# FAQ
+
+- How do I pronounce PCHR?
+
+>pee-cher

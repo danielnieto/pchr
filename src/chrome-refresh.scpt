@@ -5,7 +5,7 @@ tell application "Google Chrome"
   if theTab's URL starts with "http://localhost" or theTab's URL starts with "http://placeit-local.test" or theTab's URL starts with "file:" then
     tell theTab to execute javascript "[].forEach.call(document.getElementsByTagName('link'), function(el, i){
         var href = el.getAttribute('href');
-        if (!href.includes('/assets') || href.includes('vendor')) {
+        if (!href.includes('/assets')) {
             return
         }
         el.parentNode.replaceChild(el.cloneNode(true), el)

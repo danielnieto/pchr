@@ -1,5 +1,6 @@
 import { Command, flags } from '@oclif/command'
 import { Watcher } from '../lib/watcher';
+import { Splash } from '../lib/splash';
 import chalk from 'chalk';
 
 class Pchr extends Command {
@@ -19,6 +20,7 @@ class Pchr extends Command {
         const { args } = this.parse(Pchr);
 
         const folder = args.folder || process.cwd();
+        Splash.show();
         this.log(chalk.bgMagentaBright(`PCHR will watch for css file changes on ${folder}`));
 
         const watcher = new Watcher(folder);

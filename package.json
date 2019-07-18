@@ -1,0 +1,48 @@
+{
+  "name": "pchr",
+  "description": "Placeit Css Hot Reload",
+  "version": "1.0.0",
+  "author": "Daniel Nieto @danielnieto",
+  "bin": {
+    "pchr": "./bin/run"
+  },
+  "bugs": "https://github.com/danielnieto/pchr/issues",
+  "dependencies": {
+    "@oclif/command": "^1.5.17",
+    "@oclif/config": "^1.13.2",
+    "@oclif/plugin-help": "^2.2.0",
+    "chalk": "^2.4.2",
+    "chokidar": "^3.0.2",
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "@oclif/tslint": "^3.1.1",
+    "@types/node": "^10.14.13",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/danielnieto/pchr",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "pchr"
+  },
+  "repository": "danielnieto/pchr",
+  "scripts": {
+    "posttest": "tslint -p . -t stylish",
+    "prepack": "rm -rf lib && tsc -b",
+    "test": "echo NO TESTS"
+  },
+  "types": "lib/index.d.ts"
+}

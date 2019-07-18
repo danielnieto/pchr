@@ -1,7 +1,7 @@
 {
   "name": "pchr",
   "description": "Placeit Css Hot Reload",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "author": "Daniel Nieto @danielnieto",
   "bin": {
     "pchr": "./bin/run"

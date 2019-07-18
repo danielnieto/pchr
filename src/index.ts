@@ -1,6 +1,6 @@
 import { Command, flags } from '@oclif/command'
-import { Watcher } from './lib/watcher';
-import { Splash } from './lib/splash';
+import { Watcher } from './watcher';
+import { Splash } from './splash';
 import chalk from 'chalk';
 
 class Pchr extends Command {
